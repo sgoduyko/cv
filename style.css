@@ -9,6 +9,7 @@
 
 * {
     margin: 0;
+    line-height: 24px;
     padding: 0;
     font-family: "Exo2", sans-serif;  /* sans-serif - это шрифт по умолчанию, если Exo2 не загрузился.
     Браузер использует свой шрифт по умолчанию*/
@@ -26,11 +27,17 @@
     .no-print {
         display: none !important;
     }
+    /* disable href in <a> tag */
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 
 .menu {
-    padding-bottom: 5px
+    padding-bottom: 5px;
+    margin: 5px;
 }
 
 .black-divider {
@@ -45,20 +52,10 @@
     margin: 0;
     padding: 0;
     background: white;
-
-    /*display: grid;*/
-    /*grid-template-columns: 12mm auto;    !* .page.grid-template-columns и .highlightBar.width должны быть одинаковыми*!*/
 }
 
 .highlightBar {
-    width: 12mm;  /* .page.grid-template-columns и .highlightBar.width должны быть одинаковыми*/
-    /*padding-left: 1px;*/
-
-    /*border-right-color: black;*/
-    /*border-width: 1px;*/
-    /*border-style: solid;*/
-    /*box-sizing: border-box;*/
-    /*border: 1px solid black;*/
+    width: 10mm;
 }
 .highlightMaker {
     /*width: 100%;*/
@@ -74,19 +71,21 @@
 }
 .cv-header-content-first {
     display: grid;
-    grid-template-columns: auto 100mm;
+    grid-template-columns: auto 105mm;
 }
 .cv-header-content-first-left {
     display: flex;
     flex-direction: column;
+    padding-right: 5px;
 }
 .cv-header-fio {
-    padding-left: 3px;
-    padding-top: 4px;
-    padding-bottom: 6px;
+    padding-left: 1px;
+    padding-bottom: 12px;
+    font-weight: 600
 }
 .cv-header-current-position {
-    padding-left: 3px;
+    padding-left: 1px;
+    font-weight: normal;
 }
 
 .cv-header-content-first-right {
@@ -94,15 +93,24 @@
     flex-direction: column;
 }
 .link-to-connect {
-
+    text-align: right;
+    padding-right: 5px;
+    margin: 1px;
 }
 .img-to-connect {
     width: 5mm;
     height: 5mm;
+    margin: 3px;
 }
 .way-to-connect-item {
     display: grid;
-    grid-template-columns: auto 5mm; /* .img-to-connect.width and .way-to-connect-item.grid-template-columns must to equal */
+    grid-template-columns: auto 7mm; /* .img-to-connect.width and .way-to-connect-item.grid-template-columns must to equal */
+}
+
+.about-yourself-letter {
+    padding-top: 18px;
+    padding-left: 1px;
+    white-space: pre-line;  /* save working of /n (new line) */
 }
 
 
@@ -118,10 +126,94 @@
     width: 100%;
     height: 70mm;  /* todo предположительно*/
 }
-.study-projects-languages-section {
+.education-projects-languages-section {
     width: 100%;
-    height: 60mm;  /* todo предположительно*/
+    height: 62mm;  /* todo предположительно*/
 }
+.education-projects-languages-content {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 55mm auto 54mm;
+    margin-top: 15px;
+}
+.cv-header-education {
+}
+
+.cv-header-education-title {
+    margin-bottom: 10px;
+}
+
+.cv-header-education-content {
+
+}
+
+.education-university-name {
+    margin-bottom: 9px;
+}
+
+.education-university-specialization-name {
+
+
+}
+
+
+.cv-header-projects {
+
+}
+.cv-header-projects-title {
+    display: grid;
+    grid-template-columns: 52mm auto;
+    margin-bottom: 10px;
+}
+.cv-header-projects-title-right {
+    text-align: center;
+}
+.cv-header-projects-content {
+    list-style: none;
+}
+.cv-header-projects-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px; /* The indentation between the marker and the text */
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+li.cv-header-projects-item::before {
+    content: "•";
+    font-size: 1.4em; /* marker size */
+}
+.cv-header-project-name {
+    width: 58mm;
+    line-height: 20px;
+
+}
+
+.cv-header-project-rpc {
+    width: 10mm;
+    text-align: center;
+}
+.cv-header-languages {
+
+}
+.cv-header-languages-title {
+    margin-bottom: 10px;
+}
+.cv-header-languages-content {
+    list-style: none;
+}
+.cv-header-languages-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px; /* The indentation between the marker and the text */
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+li.cv-header-languages-item::before {
+    content: "•";
+    font-size: 1.4em; /* marker size */
+}
+
+
 .professional-activity-header-section {
     width: 100%;
     height: 20mm; /*todo*/
@@ -130,5 +222,7 @@
 .professional-activity-section {
     width: 100%;
     height: 80mm;  /* todo предположительно*/
+}
+.work-experience-title-section {
 }
 
