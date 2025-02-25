@@ -17,4 +17,12 @@ const ruTranslate = {
   "cv-header-languages-title-name": "Языки",
   "cv-header-languages-en": "Английски (B1)",
   "cv-header-languages-ru": "Русский (носитель)",
+  "professional-activity-title-name": "Профессиональная деятельность/опыт(резюме)",
+  "professional-activity-python": "4 года коммерческой разработки на Python",
+  "professional-activity-golang": "1 год разработки на Golang",
+  "professional-activity-tech-word": "Технологии:",
+  "professional-activity-db-word": "Базы данных:",
+  "professional-activity-broker-word": "Брокеры сообщений:",
+  "professional-activity-devops-word": "DevOps:",
+  "professional-activity-git-word": "Система контроля версий:",
 }

@@ -16,4 +16,12 @@ const enTranslate = {
   "cv-header-languages-title-name": "Languages",
   "cv-header-languages-en": "English (B1)",
   "cv-header-languages-ru": "Russian (native speaker)",
+  "professional-activity-title-name": "Professional activity/experience (resume)",
+  "professional-activity-python": "4 years of commercial development in Python",
+  "professional-activity-golang": "1 year of development in Golang",
+  "professional-activity-tech-word": "Technology:",
+  "professional-activity-db-word": "Databases:",
+  "professional-activity-broker-word": "Broker Queue:",
+  "professional-activity-devops-word": "DevOps:",
+  "professional-activity-git-word": "Version Control System:",
 }

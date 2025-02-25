@@ -124,7 +124,7 @@
 /* для каждой секции*/
 .cv-header-section {
     width: 100%;
-    height: 70mm;  /* todo предположительно*/
+    height: 73mm;  /* todo предположительно*/
 }
 .education-projects-languages-section {
     width: 100%;
@@ -221,7 +221,25 @@ li.cv-header-languages-item::before {
 
 .professional-activity-section {
     width: 100%;
-    height: 80mm;  /* todo предположительно*/
+    height: 87mm;  /* todo предположительно*/
+}
+
+.professional-activity-content {
+    display: flex;
+    flex-direction: column;
+}
+#id-professional-activity-title {
+    margin-bottom: 20px;
+}
+.professional-activity-item {
+    margin: 1px;
+}
+.professional-activity-tech-item {
+    display: flex;
+    margin-top: 5px;
+}
+.professional-activity-tech-item h3 {
+    margin-right: 10px;
 }
 .work-experience-title-section {
 }

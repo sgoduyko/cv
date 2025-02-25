@@ -1,4 +1,4 @@
-let translateResources = {
+const translateResources = {
     en: {
         translation: enTranslate  // const enTranslate defend at ./locales/en.js
     },
@@ -6,9 +6,14 @@ let translateResources = {
         translation: ruTranslate  // const ruTranslate defend at ./locales/ru.js
     }
 }
+let lang = new URLSearchParams(window.location.search).get('lang');
+
+if (!translateResources.hasOwnProperty(lang)) {
+   lang = 'en'
+}
 
 i18next.init({
-    lng: 'en',
+    lng: lang,
     debug: true,
     saveMissing: true,
     ele: document.body,
@@ -22,7 +27,7 @@ i18next.init({
 
 window.i18nextify.init({
     i18next,
-    lng: 'en',
+    lng: lang,
     keyAttr: 'i18next-key__Disabled',
     backend: false,
     resources: translateResources,
