@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/i18nextify.min.js"></script>
+    <script>
+      var translation = window.i18nextify.init({
+        debug: true,
+        saveMissing: true,
+        namespace: 'translationTmp',
+        // namespaceFromPath: true,
+        ns: ['common', 'commonNested'],
+        ignoreTags: ['script', 'h6'],
+        ignoreIds: ['ignoreMeId'],
+        ignoreClasses: ['ignoreMeClass'],
+        translateAttributes: ['placeholder', 'title', 'alt', 'data-translate', 'value#input.type=button'],
+        mergeTags: ['p'],
+        // inlineTags: ['br', 'strong', 'span'],
+        ignoreInlineOn: ['td'],
+        cleanIndent: true,
+        ignoreCleanIndentFor: ['PRE', 'CODE'],
+        cleanWhitespace: true
+        //autorun: false
+      });
+      // setTimeout(function () {
+      //   translation.start();
+      // }, 4000);
+    </script>
+  </head>
+  <body class="landing-page" style='display: none'>
+    <p id="appendToInner2">
+      Now we can have that on root
+      <br />
+      cool <span class="someCSS">with a span</span> and
+      <strong> a strong thing</strong>
+    </p>
+    <div id="appendToInner">
+      <p>
+        Before text
+        <br />
+        some <span class="someCSS">with a span</span> and
+        <strong> a strong thing</strong>
+      </p>
+      <pre>
+        lorem ipsum
+        ipsum dipsum
+      </pre>
+      <p>
+        lorem ipsum
+        ipsum dipsum
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Words</sup></td>
+            <td translated>2,000</td>
+          </tr>
+          <tr>
+            <td>Sessions</td>
+            <td translated>40,000</td>
+          </tr>
+          <tr>
+            <td><strong>Estimate</strong></td>
+            <td translated><strong>$29</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div data-translate="translate me please">there is more</div>
+      <input type="button" value="A button" placeholder="a placeholder" />
+      <input type="Button" value="A button" />
+      <img src="/a.png" alt="big a" />
+    </div>
+    <script>
+    setTimeout(function () {
+      var ele = document.getElementById('appendToInner');
+
+      var btn = document.createElement("BUTTON");
+      //btn.className = "ignoreMeClass"
+      var t = document.createTextNode("BAD TRIGGER");
+      btn.appendChild(t);
+
+      console.log('appendingFromOutsideToInner');
+      ele.appendChild(btn);
+    }, 5000);
+  </script>
+  </body>
+</html>

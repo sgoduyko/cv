@@ -1,0 +1,134 @@
+/* font */
+
+@font-face {
+    font-family: "Exo2";
+    src: url('fonts/exo-2/Exo2-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Exo2", sans-serif;  /* sans-serif - это шрифт по умолчанию, если Exo2 не загрузился.
+    Браузер использует свой шрифт по умолчанию*/
+}
+@page {
+    /*@page — это директива, которая задает параметры для оформления страницы при печати документа*/
+    /* В отличие от @media print, @page влияет на физическое оформление страницы, а не на содержание. */
+    size: A4;
+}
+/*для менюшки перед cv*/
+@media print {
+    /* @media print - медиа-запрос, который применяется к стилям страницы только при печати.
+    Используется для изменения элементов на странице (например, скрытие рекламных блоков,
+    изменение шрифта, изменение цветов и т. д.)*/
+    .no-print {
+        display: none !important;
+    }
+}
+
+
+.menu {
+    padding-bottom: 5px
+}
+
+.black-divider {
+    display: block;
+    background-color: black;
+    height: 2px;
+}
+
+.page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    background: white;
+
+    /*display: grid;*/
+    /*grid-template-columns: 12mm auto;    !* .page.grid-template-columns и .highlightBar.width должны быть одинаковыми*!*/
+}
+
+.highlightBar {
+    width: 12mm;  /* .page.grid-template-columns и .highlightBar.width должны быть одинаковыми*/
+    /*padding-left: 1px;*/
+
+    /*border-right-color: black;*/
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*box-sizing: border-box;*/
+    /*border: 1px solid black;*/
+}
+.highlightMaker {
+    /*width: 100%;*/
+    height: 25mm;
+    background-color: hsl(192, 50%, 51%);
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+/* content style*/
+.content {
+    width: auto
+}
+.cv-header-content-first {
+    display: grid;
+    grid-template-columns: auto 100mm;
+}
+.cv-header-content-first-left {
+    display: flex;
+    flex-direction: column;
+}
+.cv-header-fio {
+    padding-left: 3px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+.cv-header-current-position {
+    padding-left: 3px;
+}
+
+.cv-header-content-first-right {
+    display: flex;
+    flex-direction: column;
+}
+.link-to-connect {
+
+}
+.img-to-connect {
+    width: 5mm;
+    height: 5mm;
+}
+.way-to-connect-item {
+    display: grid;
+    grid-template-columns: auto 5mm; /* .img-to-connect.width and .way-to-connect-item.grid-template-columns must to equal */
+}
+
+
+
+.section-layout {
+    display: grid;
+    grid-template-columns: 12mm auto;    /* .page.grid-template-columns и .highlightBar.width должны быть одинаковыми*/
+}
+
+
+/* для каждой секции*/
+.cv-header-section {
+    width: 100%;
+    height: 70mm;  /* todo предположительно*/
+}
+.study-projects-languages-section {
+    width: 100%;
+    height: 60mm;  /* todo предположительно*/
+}
+.professional-activity-header-section {
+    width: 100%;
+    height: 20mm; /*todo*/
+}
+
+.professional-activity-section {
+    width: 100%;
+    height: 80mm;  /* todo предположительно*/
+}
+

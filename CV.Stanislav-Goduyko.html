@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="libs/i18next/i18next.js" type="text/javascript"></script>
+    <script src="libs/i18nextify/i18nextify.js" type="text/javascript"></script>
+<!--    Подключаем переводы-->
+    <script src="locales/ru.js" type="text/javascript"></script>
+    <script src="locales/en.js" type="text/javascript"></script>
+
+<!--    Подключаем основной код резюмы, по работе с переводами-->
+    <script src="main.js" type="text/javascript" defer></script>
+    <title>CV.Stanislav-Goduyko</title>
+</head>
+<body>
+    <!-- Менюшка для управления. На печать она не попадает    -->
+    <div class="menu no-print no-translate-inner">
+<!--        <button onclick="changeLanguage('ru')" translate="no">Русский</button>-->
+        <button onclick="changeLng('ru')">Русский</button>
+<!--        <button onclick="changeLanguage('en')" translate="no">English</button>-->
+        <button onclick="changeLng('en')">English</button>
+        <button onclick="window.print()" translate="no">PDF</button>
+        <div class="black-divider"></div>
+    </div>
+
+    <div class="page">
+        <div class="cv-header-section section-layout">
+            <div class="highlightBar"><div class="highlightMaker"  style="background-color: hsl(205, 100%, 19%)"></div></div> <!--    для выделения главных блоков с помощью другого цвета-->
+            <div class="content ">
+                <div class="cv-header-content-first">
+                    <div class="cv-header-content-first-left">
+                        <div class="cv-header-fio">fio</div>
+                        <div class="cv-header-current-position">current-position</div>
+                    </div>
+                    <div class="cv-header-content-first-right no-translate-inner">
+                    <!--      ways to connect  -->
+                        <div class="way-to-connect-item">
+                            <div class="link-to-connect no-translate">t.me/s_goduyko_searchingjob</div>
+                            <img src="static/img/telegram-icon.png" class="img-to-connect" alt="telegram-icon">
+                        </div>
+
+                        <div class="way-to-connect-item ">
+                            <div class="link-to-connect">stanislav.goduyko@gmail.com</div>
+                            <img src="static/img/gmail-icon.png" class="img-to-connect" alt="gmail-icon">
+                        </div>
+
+                        <div class="way-to-connect-item">
+                            <div class="link-to-connect">github.com/sgoduyko/</div>
+                            <img src="static/img/github-icon.png" class="img-to-connect" alt="github-icon">
+                        </div>
+
+                        <div class="way-to-connect-item">
+                            <div class="link-to-connect">linkedin.com/in/stanislav-goduyko-008aa2200/</div>
+                            <img src="static/img/linkedin-icon.png" class="img-to-connect" alt="linkedin-icon">
+                        </div>
+                    </div>
+                </div>
+                <div>about-yourself-letter</div>
+
+            </div>
+        </div>
+
+        <div class="study-projects-languages-section section-layout">
+            <div class="highlightBar"></div>
+            <div class="content">study-projects-languages-section</div>
+        </div>
+
+        <div class="professional-activity-section section-layout">
+            <div class="highlightBar"></div>
+            <div class="content">professional-activity-section</div>
+        </div>
+
+        <!--    Work Experience Section    -->
+        <div class=".work-experience-header-section section-layout">
+            <div class="highlightBar"></div>
+            <div class="content">Experience Job</div>
+        </div>
+        <div class="black-divider"></div>
+    </div>
+
+    <div class="page">page</div>
+</body>
+</html>
