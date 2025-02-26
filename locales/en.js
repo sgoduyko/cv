@@ -27,7 +27,7 @@ const enTranslate = {
   "work-experience-title-name": "Work Experience",
   "tasks-and-achievements": "Tasks and achievements",
   "job-item-description-and-role-title-name": "Description of the project/role",
-  "job-item-description-and-role-tech-name": "Технологический стэк",
+  "job-item-description-and-role-tech-name": "Technology stack",
 
   // TFN company
   "tfn-task-item-1": "Optimization SQL-queries",
