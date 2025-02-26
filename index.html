@@ -16,11 +16,13 @@
 <body>
     <!-- Менюшка для управления. На печать она не попадает    -->
     <div class="menu no-print no-translate-inner">
-<!--        <button onclick="changeLanguage('ru')" translate="no">Русский</button>-->
-        <button onclick="changeLng('ru')">Русский</button>
-<!--        <button onclick="changeLanguage('en')" translate="no">English</button>-->
-        <button onclick="changeLng('en')">English</button>
-        <button onclick="window.print()" translate="no">PDF</button>
+        <div class="menu-translate-section">
+            <button class="menu-lang-button" onclick="changeLng('ru')">Русский</button>
+            <button class="menu-lang-button" onclick="changeLng('en')">English</button>
+        </div>
+        <button onclick="window.print()" id="id-menu-button-pdf" translate="no">
+            <img src="static/img/pdf-button.png" id="id-img-pdf" alt="print PDF">
+        </button>
         <div class="black-divider"></div>
     </div>
 

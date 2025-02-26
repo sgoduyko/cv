@@ -33,11 +33,42 @@
         color: inherit;
     }
 }
+.menu-translate-section {
+    display: flex;
+    margin-right: 30px;
+}
+#id-menu-button-pdf {
+    border: none;
+    background-color: inherit;
+}
+#id-menu-button-pdf:hover {
+    cursor: pointer;
+}
 
+#id-img-pdf {
+    width: auto;
+    height: 87%;
+    display: block;
+}
 
 .menu {
+    display: flex;
     padding-bottom: 5px;
     margin: 5px;
+    height: 70px
+}
+.menu-lang-button {
+    background-color: hsl(240 100% 86%);
+    color: hsl(0 0% 0%);
+    border: 1px solid hsl(242 60% 47%);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.menu-lang-button:hover {
+    background-color: hsl(240 100% 81%)
 }
 
 .black-divider {
@@ -231,11 +262,12 @@ li::before {
     margin-right: 10px;
 }
 .job-item {
+    margin-bottom: 10px;
 
 }
 .job-item-content {
     display: grid;
-    grid-template-columns: auto 80mm;
+    grid-template-columns: auto 90mm;
     margin-bottom: 25px;
 }
 
@@ -254,8 +286,9 @@ li::before {
     margin: 3px;
 }
 .job-item-company-task {
-    margin: 5px;
+    margin: 7px;
     line-height: 22px;
+    width: 95mm
 
 }
 
@@ -276,6 +309,9 @@ li.job-item-company-task::before {
 
 .job-item-description-and-role-title {
     margin-bottom: 5px;
+}
+.job-item-description-and-role-text {
+    line-height: 25px
 }
 
 .description-and-role-tech-title {
