@@ -28,7 +28,7 @@ const ruTranslate = {
   "work-experience-title-name": "Опыт работы",
   "tasks-and-achievements": "Задачи и достижения",
   "job-item-description-and-role-title-name": "Описание проекта/роль",
-  "job-item-description-and-role-tech-name": "Technology stack",
+  "job-item-description-and-role-tech-name": "Технологический стэк",
 
   // TFN company
   "tfn-task-item-1": "Оптимизация SQL-запросов",
