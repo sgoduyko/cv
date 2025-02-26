@@ -51,5 +51,15 @@ const enTranslate = {
   "uniclab-task-item-5": "Create ERIP reports for smart meters",
   "uniclab-task-item-6": "Sync data between the data aggregator and the data analytics and display service",
   "uniclab-task-item-7": "Development of the address/location module",
-  "uniclab-description-and-role": "Smart meter data aggregation system. Smart meters for gas, water and electricity. A personal data service has been developed that deals with data display and analysis. I went all the way with the project from the beginning of the development of the personal account service to the final release of the entire system in a production environment."
+  "uniclab-description-and-role": "Smart meter data aggregation system. Smart meters for gas, water and electricity. A personal data service has been developed that deals with data display and analysis. I went all the way with the project from the beginning of the development of the personal account service to the final release of the entire system in a production environment.",
+
+
+  //  Schoolsby company
+  "schoolsby-task-item-1": "Development of a module for pupil performance reports for a week/quarter and a year",
+  "schoolsby-task-item-2": "Development of the texting module",
+  "schoolsby-task-item-3": "Development of a news feed for parents",
+  "schoolsby-task-item-4": "Development of the diary module",
+  "schoolsby-task-item-5": "Development of events by a pupil",
+  "schoolsby-task-item-6": "and a lot of other modules.",
+  "schoolsby-description-and-role": "A platform for school journals and diaries that allows teachers to keep a journal in electronic form, and parents to receive information directly from the teacher. The service had an existing browser version, so work was underway to create an api for mobile applications. Mobile applications were developed for teachers, parents and pupils.",
 }
