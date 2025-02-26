@@ -17,7 +17,7 @@ const enTranslate = {
   "cv-header-languages-en": "English (B1)",
   "cv-header-languages-ru": "Russian (native speaker)",
   "professional-activity-title-name": "Professional activity/experience (resume)",
-  "professional-activity-python": "4 years of commercial development in Python",
+  "professional-activity-python": "5+ years of commercial development in Python",
   "professional-activity-golang": "1 year of development in Golang",
   "professional-activity-tech-word": "Technology:",
   "professional-activity-db-word": "Databases:",
@@ -62,4 +62,14 @@ const enTranslate = {
   "schoolsby-task-item-5": "Development of events by a pupil",
   "schoolsby-task-item-6": "and a lot of other modules.",
   "schoolsby-description-and-role": "A platform for school journals and diaries that allows teachers to keep a journal in electronic form, and parents to receive information directly from the teacher. The service had an existing browser version, so work was underway to create an api for mobile applications. Mobile applications were developed for teachers, parents and pupils.",
+
+
+  //  LACIT company
+  "lacit-task-item-1": "capture Aruco markers. transfer to SC of a hand",
+  "lacit-task-item-2": "Building a motion density map based on video",
+  "lacit-task-item-3": "Transfer a audio to text",
+  "lacit-task-item-4": "Create dataset from audio for learning for Cyrillic",
+  "lacit-task-item-5": "Write unit and integration tests",
+  "lacit-task-item-6": "Write documentation",
+  "lacit-description-and-role": "A system was being developed to automate the shoe creation process. There were different departments that dealt with the hard and soft parts of the system to start the skin preparation process, create the foundation and final products. My task was to help as much as possible with some individual tasks and learn, learn and learn.",
 }
