@@ -29,6 +29,14 @@ const enTranslate = {
   "job-item-description-and-role-title-name": "Description of the project/role",
   "job-item-description-and-role-tech-name": "Technology stack",
 
+  // Innotech Solutions
+  "innotech-solutions-task-item-1": "Development of a framework for writing asynchronous pipelines over http for tasks with a big data",
+  "innotech-solutions-task-item-2": "Maintenance and development of a service of reports. Development of new reports",
+  "innotech-solutions-task-item-3": "Development of an internal tool for creation of xls files",
+  "innotech-solutions-task-item-4": "Code review",
+  "innotech-solutions-description-and-role": "A system for collecting consumption from meters and not just meters. This system has a lot of related services for post-processing and analytics.",
+
+
   // TFN company
   "tfn-task-item-1": "Optimization SQL-queries",
   "tfn-task-item-2": "Improvements in payment processes on the service",
@@ -42,6 +50,7 @@ const enTranslate = {
   "tfn-task-item-10": "Write documentation (C4)",
   "tfn-task-item-11": "Pipelines for extracting data from files to a database",
   "tfn-description-and-role": "a telematic system of a car. The system was an existing, work was underway to fix bugs and speed up bottlenecks. At the same time, the functionality on all services was regularly improved/added.",
+
 
   //  UnicLab company
   "uniclab-task-item-1": "Code review",
